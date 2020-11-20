@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+}
+
+a {
+	display: inline-block;
+}
+
+p {
+	color: black;
+}
+
+header {
+	padding: 15px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2; /*la seccion inicio tiene por defecto el valor 1*/
+	background-color: white;
+	width: 100%;
+}	
+
+header .container {
+	display: flex;
+	justify-content: space-between; /*acomoda los elementos en base al eje x*/
+	align-items: center; /*acomoda los elementos en base al eje y*/
+}
+
+header .container .logo {
+	width: 100px;
+}
+
+header .container a {
+	color: red;
+	text-decoration: none;
+	margin: 0 15px;
+}
+
+.boton {
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 20px;
+}
+
+.boton.boton-rojo { /*un mismo elemento contiene las dos clases*/
+	color: white; 
+	background-color: red; 
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.section {
+	padding-top: 60px;
+	padding-right: 60px;
+}
+
+
+.container {
+	width: 1140px;
+	margin: 0 auto 0 auto; 
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#inicio {
+	position: relative;
+}
+
+#inicio img {
+	width: 100%;
+	display: block;
+}
+
+#inicio .bloque-inicio {
+	position: absolute; /*solo funciona bien si esta dentro de un elemento con position relative o absolute*/
+	top: 40%;
+	left: 40%;
+	width: 400px;
+	text-align: center; /*se centran los textos y cualquier elemento que sea inline*/
+	margin-left: -64px; /*solo la propiedad margin trabaja con números negativos*/
+}
+
+#inicio .bloque-inicio h1 {
+	color: white;
+	font-size: 35px;
+}
+
+#inicio .bloque-inicio p {
+	color: white;
+	font-size: 16px;
+}
+
+#nosotros {
+	background-image: url(img/latas.jpg);
+	background-size: cover;
+}
+
+#nosotros p {
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	margin: 0;
+}
